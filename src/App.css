@@ -1,152 +1,106 @@
-:root {
-  --Green: hsl(75, 94%, 57%);
-  /*### Neutral*/
-  --White: hsl(0, 0%, 100%);
-  --Grey: hsl(0, 0%, 20%);
-  --Dark-Grey: hsl(0, 0%, 12%);
-  --Off-Black: hsl(0, 0%, 8%);
-}
+body
+{
+    background-color: var(--OffBlack);
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Inter", sans-serif;
 
-body {
-  font-family: 'Inter', sans-serif;
-  color: var(--White);
-  background-color: var(--Off-Black);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  Font-size: 14px;
-  width: 100%;
-  height: 100vh;
 }
-
-.main{
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
+.contenedor
+{
+    background-color: var(--DarkGrey);
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    width: 320px;
+    height: 560px;
+    border-radius: 10px;  
+    align-content:flex-start;
+    justify-content:space-between;
 }
-
-h2 {
-  
-  color: var(--Green);
-  margin-top: -8px;
+.texto
+{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    margin: 0px 10px 0px 10px;
+    width: 90%;
+    height: 40%;
+    padding: 15px 0px 13px 0px;
 }
-
-.imagen {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 60%;
-  width: 50%;
+.botones
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-evenly;
+    height: 60%;
+    width: 100%;
+    padding: 0px 0px 10px 0px;
 }
-
-.cuadrito {
-  width: 350px;
-  height: 700px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: 20px;
-  padding: 80px;    
+img
+{
+    border-radius: 50%;
+    height: 80px;
+    margin:40px 0px 20px 0px;
 }
-
-.cuadrito1 {
-  width: 100%;
-  height: 50px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--Dark-Grey);
-  border-radius: 20px;
-  padding: 80px;
-  margin-bottom: 40px;
+button
+{
+    background-color: var(--Grey);
+    border: none;
+    width: 85%;
+    border-radius: 7px;
+    color: var(--White);  
+    padding: 13px 0px 13px 0px;
+    font-weight: 700;
 }
-
-.cont {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 150%;
-  height: 700px;
-  background-color: var(--Dark-Grey);
-  font-family: 'Inter', sans-serif;
-  border-radius: 20px;
-  padding: 10px;
-  margin-bottom: 50px;
+h2
+{
+    font-weight: 600;
+    color: var(--White);
+    line-height: 0px;
 }
-
-.contenedor {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  justify-content: space-between;
-  width: 110%;
-  height: 100px;
-  font-family: 'Inter', sans-serif;
-  align-items: flex;
+h3
+{
+    
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--Green);
+    line-height: 0px;
 }
-
-button {
-  width: 100%;
-  padding: 20px 0 10px 0;
-  color: var(--White);
-  border-radius: 15px;
-  font-family: 'Inter', sans-serif;
-  background-color: var(--Dark-Grey);
-  border: none;
-  height: 100%;
+p
+{
+    font-size: 14px;
+    color: var(--White);
+    line-height: 40px;
 }
-
+:root
+{
+        --White: hsl(0, 0%, 100%);
+        --Grey: hsl(0, 0%, 20%);
+        --DarkGrey: hsl(0, 0%, 12%);
+        --OffBlack: hsl(0, 0%, 8%);
+        --Green: hsl(75, 94%, 57%);
+}
 button:hover {
-  cursor: pointer;
-  background-color: var(--Green);
-  color: var(--Dark-Grey);
-}
-
-.card {
-  width: 300px;
-  height: 600px;
-  background-color: var(--Dark-Grey);
-  border-radius: 20px;
-  padding: 50px;
-  display: flex; 
-  flex-direction: column; 
-  align-items: center; 
-  margin-bottom: 40px;
-}
-
-.card-image {
-  border-radius: 50%;
-  width: 100px;
-  margin-bottom: 20px; 
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 12%);
+    cursor: pointer;
 }
 @media (min-width: 1440px) {
-  .imagen {
-    width: 40%;
-}
-
-h1 {
-    font-size: 30px;
-    margin-bottom: 0.2em;
-}
-
-h2 {
-    margin-top: 0.1em;
-}
-
-p {
-    font-size: 20px;
+  .contenedor
+{
+    width: 382px;    
+    height: 600px;
 }
 
 button{
-    font-size: 17px;
-}
-.contenedor {
-    width: 100%;
+    width: 80%;
 }
 }
