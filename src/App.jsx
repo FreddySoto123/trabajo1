@@ -1,27 +1,37 @@
-import { useEffect, useState } from "react";
-import "./App.css"
+import React, { useEffect, useState } from "react";
+import "./App.css";
 import Card from "./componentes/Card";
 
-function App() {
-  const [users, setUsers] = useState([])
-  useEffect(() => {
-    fetch('https://661038040640280f219c99f5.mockapi.io/users')
-      .then((res) => {
-        return res.json();
-      }).then((data) => {
-        setUsers(data)
-        console.log(data)
+function App() 
+{
+  const [user, setUser] = useState([]);
+
+  useEffect(() => 
+  {
+    const PaginaRand = Math.floor(Math.random() * 34) + 1; 
+
+    fetch(`https://rickandmortyapi.com/api/character?page=${PaginaRand}`)
+      .then((res) => res.json())
+      .then((data) => 
+      {
+        const PersonajeRandom = getPersonajeRandom(data.results, 10);
+        setUser(PersonajeRandom);
       });
-  }, [])
+  }, []);
+
+  const getPersonajeRandom = (userArray, count) => 
+  {
+    const mezcla = userArray.sort(() => 0.5 - Math.random());
+    return mezcla.slice(0, count);
+  };
+
   return (
-    <>
-     {
-      users.map(user=>(
-        <Card key={user.id} user={user}/>
-      ))
-     }
-    </>
-  )
+    <div className="App">
+      {user.map((character) => (
+        <Card key={character.id} character={character} />
+      ))}
+    </div>
+  );
 }
 
-export default App
+export default App;

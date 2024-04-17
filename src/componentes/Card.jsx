@@ -1,18 +1,14 @@
-import React from 'react'
-import UserDetails from './UserDetails';
-import ButtonSection from './ButtonSection';
+import React from "react";
+import UserDetails from "./UserDetails";
 import "./Card.css";
 
-const card = (props) => {
-    const user=props.user
-    // console.log(user);
-    const socialLinks = user["social-links"] 
+const Card = ({ character }) => 
+{
   return (
     <div className="contenedor">
-        <UserDetails user= {user}/>
-        <ButtonSection socialLinks={socialLinks} />
+      <UserDetails character={character} />
     </div>
-  )
-}
+  );
+};
 
-export default card;
+export default Card;

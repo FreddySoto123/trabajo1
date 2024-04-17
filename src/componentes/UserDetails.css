@@ -17,9 +17,10 @@ img
 }
 h2
 {
-    font-weight: 600;
+    display: flex;
+    font-size: 20px;
     color: var(--White);
-    line-height: 0px;
+    line-height: 20px;
 }
 h3
 {
@@ -31,7 +32,7 @@ h3
 }
 p
 {
-    font-size: 14px;
+    font-size: 13px;
     color: var(--White);
-    line-height: 40px;
+    line-height: 15px;
 }
