@@ -1,34 +1,40 @@
 .detalles {
-    display: flex;
-    align-items: center;
-  }
-  
-  .avatar {
-    margin-right: 10px; 
-  }
-  
-  .avatar img {
-    border-radius: 50%;
-    height: 100px;
-    width: 100px;
-  }
+  display: flex;
+  align-items: center;
+}
 
-  
-  .texto h2 {
-    font-size: 16px;
-    color: var(--White);
-    line-height: 30px;
-  }
-  
-  .texto h3 {
-    font-weight: 400;
-    font-size: 14px;
-    color: var(--Green);
-    line-height: 0px;
-  }
-  
-  .texto p {
-    font-size: 13px;
-    color: var(--White);
-    line-height: 9px;
-  }
+.avat {
+  margin-right: 1.rem;
+}
+
+.avat img {
+  height: auto; 
+  width:7rem; 
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: row; 
+}
+
+.text h2 {
+  font-size: 11px; 
+  color: var(--White);
+  margin: 2px; 
+  text-align: center; 
+}
+
+.text h3 {
+
+  font-size: 8px;
+  color: var(--Green);
+  margin: 5px;
+  text-align: center; 
+}
+
+.text p {
+  font-size: 7px; 
+  color: var(--White);
+  margin: 8px; 
+  text-align: center; 
+}

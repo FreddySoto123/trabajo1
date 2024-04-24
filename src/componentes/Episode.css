@@ -1,24 +1,23 @@
 .informacion-extra {
-    margin-top: 1px; 
-    padding: 10px;
-    background-color:var(--DarkGrey)y;
-    border-radius: 5px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-  .episode-info {
-    width:40%; 
-    margin-bottom: 20px;
-    background-color: green;
-    padding: 5px;
-    
+  margin-top: 1px; 
+  padding: 1rem;
+  background-color: var(--DarkGrey); 
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
-  }
-  
-  .episode-info p {
-    font-size: 10px;
-    color: white;
-    line-height: 1.5;
-  }
+.episode-info {
+  width: 48%; 
+  margin-bottom: 20px;
+  background-color: darkgray;
+  padding: 0.5rem; 
+  box-sizing: border-box;
+}
+
+.episode-info p {
+  font-size: 0.875rem; 
+  color: black;
+  line-height: 1.2;
+}

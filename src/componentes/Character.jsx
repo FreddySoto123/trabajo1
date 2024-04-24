@@ -9,11 +9,11 @@ const Character = ({ character }) => {
   return (
     <div className="contenedor">
       <Info character={character} />
+      <h4>Fecha de salida y Episodios</h4> 
       <Episode character={character} /> 
       <NavLink to="/">
         <ButtonSection socialLinks={[{ name: 'Home' }]} />
-        </NavLink>
-       
+      </NavLink>
     </div>
   );
 };

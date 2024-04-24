@@ -8,7 +8,7 @@ const Card = ({ character }) => {
     return (
 
         <NavLink to={`/character?id=${character.id}`}>
-            <div className="contenedor">
+            <div className="contened">
                 <UserDetails character={character} />
             </div>
         </NavLink>
