@@ -1,11 +1,11 @@
-/* .contenedor {
+.contenedor {
     background-color: var(--DarkGrey);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 300px;
-    height: 290px;
+    width: 350px;
+    height: 400px;
     border-radius: 10px;  
     margin-bottom: 35px; 
 }
@@ -20,4 +20,4 @@
   button{
       width: 80%;
   }
-  } */
+  }

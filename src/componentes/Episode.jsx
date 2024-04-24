@@ -13,7 +13,7 @@ const Episode = ({ character }) => {
 
     const fetchEpisodes = async () => {
       if (character.episode && character.episode.length > 0) {
-        const episodePromises = character.episode.slice(0, 9).map(fetchEpisodeData);
+        const episodePromises = character.episode.slice(0, 4).map(fetchEpisodeData);
         const episodeData = await Promise.all(episodePromises);
         setEpisodes(episodeData);
       }

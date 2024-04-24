@@ -9,14 +9,16 @@
   }
   
   .episode-info {
-    width: 20%; 
-    margin-bottom: 15px;
+    width:40%; 
+    margin-bottom: 20px;
     background-color: green;
-    padding: 10px;
+    padding: 5px;
+    
+
   }
   
   .episode-info p {
-    font-size: 14px;
+    font-size: 10px;
     color: white;
     line-height: 1.5;
   }

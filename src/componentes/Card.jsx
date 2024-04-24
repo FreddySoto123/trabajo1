@@ -1,14 +1,18 @@
-// import React from "react";
-// import UserDetails from "./UserDetails";
-// import "./Card.css";
+import React from "react";
+import UserDetails from "./UserDetails";
+import "./Card.css";
+import { NavLink } from "react-router-dom";
 
-// const Card = ({ character }) => 
-// {
-//   return (
-//     <div className="contenedor">
-//       <UserDetails character={character} />
-//     </div>
-//   );
-// };
+const Card = ({ character }) => {
+    console.log(character);
+    return (
 
-// export default Card;
+        <NavLink to={`/character?id=${character.id}`}>
+            <div className="contenedor">
+                <UserDetails character={character} />
+            </div>
+        </NavLink>
+    );
+};
+
+export default Card;
