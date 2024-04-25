@@ -27,8 +27,13 @@ const Episode = ({ character }) => {
       {episodes.length > 0 && (
         episodes.map((episode, index) => (
           <div key={index} className="episode-info">
+            <h4>Nombre Ep:</h4> 
+            <p> {episode.name}</p>
+            <h4>Fecha salida:</h4> 
             <p> {episode.air_date}</p>
+            <h4>Episodio</h4> 
             <p> {episode.episode}</p>
+
           </div>
         ))
       )}

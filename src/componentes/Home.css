@@ -1,0 +1,13 @@
+.App
+{
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    justify-items: center;
+}
+
+@media(max-width: 760px)
+{
+    .App{
+        grid-template-columns: repeat(2, 350px);
+    }
+}

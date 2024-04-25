@@ -1,3 +1,8 @@
+.flujo {
+display: flex;
+flex-direction: row; 
+flex-wrap: wrap;
+}
 .contened {
     background-color: var(--DarkGrey);
     display: flex;
@@ -8,13 +13,18 @@
     height: auto;
     border-radius: 10px;  
     margin-bottom: 35px; 
+    justify-content:space-around;
 }
 
 @media (min-width: 1440px) {
-  
+  .flujo{
+    flex-direction: row;
+  }
     .contened {
-        flex-direction: column; 
-        max-width: 100%; 
+        flex-direction: row; 
+        overflow: auto;
+        max-width:222px;
+        max-height: 150px; 
         height: auto; 
     }
   

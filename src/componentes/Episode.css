@@ -4,20 +4,23 @@
   background-color: var(--DarkGrey); 
   border-radius: 5px;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: space-between;
 }
 
 .episode-info {
-  width: 48%; 
+  width: 200px; 
   margin-bottom: 20px;
   background-color: darkgray;
-  padding: 0.5rem; 
+  padding: 10px; 
   box-sizing: border-box;
 }
 
 .episode-info p {
-  font-size: 0.875rem; 
+  font-size: 15px; 
   color: black;
   line-height: 1.2;
+}
+h4{
+  color: orange;
 }

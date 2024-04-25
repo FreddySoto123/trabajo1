@@ -3,7 +3,7 @@ import "./UserDetails.css";
 
 const UserDetails = ({ character }) => {
   return (
-    <div className="detalles">
+    <div className="detall">
       <div className="avat">
         <img src={character.image} alt={`avatar de ${character.name}`} />
       </div>

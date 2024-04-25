@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Card from "./Card";
+import "./Home.css"
 
 const Home = () => {
   const [user, setUser] = useState([]);
